@@ -1,0 +1,4 @@
+C:\Users\Hicham\Source\Repos\CrmWorkflowExplorer\XrmToolBox.Extensibility\obj\Debug Without GemBox\XrmToolBox.Extensibility.csprojResolveAssemblyReference.cache
+C:\Users\Hicham\Source\Repos\CrmWorkflowExplorer\XrmToolBox.Extensibility\obj\Debug Without GemBox\XrmToolBox.Extensibility.UserControls.LargePluginModel.resources
+C:\Users\Hicham\Source\Repos\CrmWorkflowExplorer\XrmToolBox.Extensibility\obj\Debug Without GemBox\XrmToolBox.Extensibility.UserControls.SmallPluginModel.resources
+C:\Users\Hicham\Source\Repos\CrmWorkflowExplorer\XrmToolBox.Extensibility\obj\Debug Without GemBox\XrmToolBox.Extensibility.csproj.GenerateResource.Cache
