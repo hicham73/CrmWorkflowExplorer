@@ -76,3 +76,6 @@ C:\Users\Hicham\documents\visual studio 2015\Projects\MyXrmToolBox\XrmToolBox\ob
 C:\Users\Hicham\documents\visual studio 2015\Projects\MyXrmToolBox\XrmToolBox\obj\Debug\XrmToolBox.csproj.GenerateResource.Cache
 C:\Users\Hicham\documents\visual studio 2015\Projects\MyXrmToolBox\XrmToolBox\obj\Debug\XrmToolBox.exe
 C:\Users\Hicham\documents\visual studio 2015\Projects\MyXrmToolBox\XrmToolBox\obj\Debug\XrmToolBox.pdb
+C:\github\CrmWorkflowExplorer\XrmToolBox\bin\Debug\XrmToolBox.exe.config
+C:\github\CrmWorkflowExplorer\XrmToolBox\obj\Debug\XrmToolBox.exe
+C:\github\CrmWorkflowExplorer\XrmToolBox\obj\Debug\XrmToolBox.pdb
