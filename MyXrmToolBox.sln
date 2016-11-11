@@ -1,0 +1,61 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "ReferencedAssemblies", "ReferencedAssemblies", "{E8F2B227-940B-4C4B-97FE-643553B39267}"
+	ProjectSection(SolutionItems) = preProject
+		Referenced Assemblies\ILMerge.exe = Referenced Assemblies\ILMerge.exe
+		Referenced Assemblies\Microsoft.Crm.Sdk.Proxy.dll = Referenced Assemblies\Microsoft.Crm.Sdk.Proxy.dll
+		Referenced Assemblies\Microsoft.IdentityModel.Clients.ActiveDirectory.dll = Referenced Assemblies\Microsoft.IdentityModel.Clients.ActiveDirectory.dll
+		Referenced Assemblies\Microsoft.IdentityModel.Clients.ActiveDirectory.WindowsForms.dll = Referenced Assemblies\Microsoft.IdentityModel.Clients.ActiveDirectory.WindowsForms.dll
+		Referenced Assemblies\Microsoft.Xrm.Sdk.Deployment.dll = Referenced Assemblies\Microsoft.Xrm.Sdk.Deployment.dll
+		Referenced Assemblies\Microsoft.Xrm.Sdk.dll = Referenced Assemblies\Microsoft.Xrm.Sdk.dll
+		Referenced Assemblies\Microsoft.Xrm.Tooling.Connector.dll = Referenced Assemblies\Microsoft.Xrm.Tooling.Connector.dll
+		Referenced Assemblies\Microsoft.Xrm.Tooling.CrmConnectControl.dll = Referenced Assemblies\Microsoft.Xrm.Tooling.CrmConnectControl.dll
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "XrmToolBox", "XrmToolBox\XrmToolBox.csproj", "{328D55BE-8B9A-4087-A5C2-9FBAF623F54B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "XrmToolBox.AutoUpdater", "XrmToolBox.AutoUpdater\XrmToolBox.AutoUpdater.csproj", "{564C72C8-586E-4218-B6B3-F464F7C3903A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "XrmToolBox.Extensibility", "XrmToolBox.Extensibility\XrmToolBox.Extensibility.csproj", "{DF77AEA3-43F7-403C-91AF-3023A3BB06EC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MsCrmTools.WorkflowExplorer", "MsCrmTools.SampleTool\MsCrmTools.WorkflowExplorer.csproj", "{5BF1E228-F898-40CF-B8FB-8412D8C81CFF}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug Without GemBox|Any CPU = Debug Without GemBox|Any CPU
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{328D55BE-8B9A-4087-A5C2-9FBAF623F54B}.Debug Without GemBox|Any CPU.ActiveCfg = Debug Without GemBox|Any CPU
+		{328D55BE-8B9A-4087-A5C2-9FBAF623F54B}.Debug Without GemBox|Any CPU.Build.0 = Debug Without GemBox|Any CPU
+		{328D55BE-8B9A-4087-A5C2-9FBAF623F54B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{328D55BE-8B9A-4087-A5C2-9FBAF623F54B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{328D55BE-8B9A-4087-A5C2-9FBAF623F54B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{328D55BE-8B9A-4087-A5C2-9FBAF623F54B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{564C72C8-586E-4218-B6B3-F464F7C3903A}.Debug Without GemBox|Any CPU.ActiveCfg = Debug|Any CPU
+		{564C72C8-586E-4218-B6B3-F464F7C3903A}.Debug Without GemBox|Any CPU.Build.0 = Debug|Any CPU
+		{564C72C8-586E-4218-B6B3-F464F7C3903A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{564C72C8-586E-4218-B6B3-F464F7C3903A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{564C72C8-586E-4218-B6B3-F464F7C3903A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{564C72C8-586E-4218-B6B3-F464F7C3903A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DF77AEA3-43F7-403C-91AF-3023A3BB06EC}.Debug Without GemBox|Any CPU.ActiveCfg = Debug Without GemBox|Any CPU
+		{DF77AEA3-43F7-403C-91AF-3023A3BB06EC}.Debug Without GemBox|Any CPU.Build.0 = Debug Without GemBox|Any CPU
+		{DF77AEA3-43F7-403C-91AF-3023A3BB06EC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DF77AEA3-43F7-403C-91AF-3023A3BB06EC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DF77AEA3-43F7-403C-91AF-3023A3BB06EC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DF77AEA3-43F7-403C-91AF-3023A3BB06EC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5BF1E228-F898-40CF-B8FB-8412D8C81CFF}.Debug Without GemBox|Any CPU.ActiveCfg = Debug Without GemBox|Any CPU
+		{5BF1E228-F898-40CF-B8FB-8412D8C81CFF}.Debug Without GemBox|Any CPU.Build.0 = Debug Without GemBox|Any CPU
+		{5BF1E228-F898-40CF-B8FB-8412D8C81CFF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5BF1E228-F898-40CF-B8FB-8412D8C81CFF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5BF1E228-F898-40CF-B8FB-8412D8C81CFF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5BF1E228-F898-40CF-B8FB-8412D8C81CFF}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

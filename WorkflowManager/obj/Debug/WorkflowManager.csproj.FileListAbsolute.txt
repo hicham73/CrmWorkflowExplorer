@@ -1,0 +1,8 @@
+c:\users\hicham\documents\visual studio 2015\Projects\MyXrmToolBox\WorkflowManager\bin\Debug\WorkflowManager.exe.config
+c:\users\hicham\documents\visual studio 2015\Projects\MyXrmToolBox\WorkflowManager\bin\Debug\WorkflowManager.exe
+c:\users\hicham\documents\visual studio 2015\Projects\MyXrmToolBox\WorkflowManager\bin\Debug\WorkflowManager.pdb
+c:\users\hicham\documents\visual studio 2015\Projects\MyXrmToolBox\WorkflowManager\obj\Debug\WorkflowManager.csprojResolveAssemblyReference.cache
+c:\users\hicham\documents\visual studio 2015\Projects\MyXrmToolBox\WorkflowManager\obj\Debug\WorkflowManager.Properties.Resources.resources
+c:\users\hicham\documents\visual studio 2015\Projects\MyXrmToolBox\WorkflowManager\obj\Debug\WorkflowManager.csproj.GenerateResource.Cache
+c:\users\hicham\documents\visual studio 2015\Projects\MyXrmToolBox\WorkflowManager\obj\Debug\WorkflowManager.exe
+c:\users\hicham\documents\visual studio 2015\Projects\MyXrmToolBox\WorkflowManager\obj\Debug\WorkflowManager.pdb

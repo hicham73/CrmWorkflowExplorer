@@ -1,0 +1,54 @@
+C:\github\XrmToolBox\XrmToolBox.AutoUpdater\bin\Debug\XrmToolBox.AutoUpdater.exe.config
+C:\github\XrmToolBox\XrmToolBox.AutoUpdater\bin\Debug\XrmToolBox.AutoUpdater.exe
+C:\github\XrmToolBox\XrmToolBox.AutoUpdater\bin\Debug\XrmToolBox.AutoUpdater.pdb
+C:\github\XrmToolBox\XrmToolBox.AutoUpdater\bin\Debug\McTools.Xrm.Connection.dll
+C:\github\XrmToolBox\XrmToolBox.AutoUpdater\bin\Debug\McTools.Xrm.Connection.WinForms.dll
+C:\github\XrmToolBox\XrmToolBox.AutoUpdater\bin\Debug\Microsoft.Crm.Sdk.Proxy.dll
+C:\github\XrmToolBox\XrmToolBox.AutoUpdater\bin\Debug\Microsoft.IdentityModel.Clients.ActiveDirectory.dll
+C:\github\XrmToolBox\XrmToolBox.AutoUpdater\bin\Debug\Microsoft.IdentityModel.Clients.ActiveDirectory.WindowsForms.dll
+C:\github\XrmToolBox\XrmToolBox.AutoUpdater\bin\Debug\Microsoft.IdentityModel.dll
+C:\github\XrmToolBox\XrmToolBox.AutoUpdater\bin\Debug\Microsoft.Xrm.Sdk.Deployment.dll
+C:\github\XrmToolBox\XrmToolBox.AutoUpdater\bin\Debug\Microsoft.Xrm.Sdk.dll
+C:\github\XrmToolBox\XrmToolBox.AutoUpdater\bin\Debug\Microsoft.Xrm.Sdk.Workflow.dll
+C:\github\XrmToolBox\XrmToolBox.AutoUpdater\bin\Debug\Microsoft.Xrm.Tooling.Connector.dll
+C:\github\XrmToolBox\XrmToolBox.AutoUpdater\bin\Debug\Microsoft.Crm.Sdk.Proxy.xml
+C:\github\XrmToolBox\XrmToolBox.AutoUpdater\bin\Debug\Microsoft.IdentityModel.Clients.ActiveDirectory.pdb
+C:\github\XrmToolBox\XrmToolBox.AutoUpdater\bin\Debug\Microsoft.IdentityModel.Clients.ActiveDirectory.xml
+C:\github\XrmToolBox\XrmToolBox.AutoUpdater\bin\Debug\Microsoft.IdentityModel.Clients.ActiveDirectory.WindowsForms.pdb
+C:\github\XrmToolBox\XrmToolBox.AutoUpdater\bin\Debug\Microsoft.Xrm.Sdk.xml
+C:\github\XrmToolBox\XrmToolBox.AutoUpdater\bin\Debug\Microsoft.Xrm.Sdk.Deployment.xml
+C:\github\XrmToolBox\XrmToolBox.AutoUpdater\bin\Debug\Microsoft.Xrm.Sdk.Workflow.xml
+C:\github\XrmToolBox\XrmToolBox.AutoUpdater\bin\Debug\Microsoft.Xrm.Tooling.Connector.xml
+C:\github\XrmToolBox\XrmToolBox.AutoUpdater\obj\Debug\XrmToolBox.AutoUpdater.csprojResolveAssemblyReference.cache
+C:\github\XrmToolBox\XrmToolBox.AutoUpdater\obj\Debug\XrmToolBox.AutoUpdater.AutoUpdater.resources
+C:\github\XrmToolBox\XrmToolBox.AutoUpdater\obj\Debug\XrmToolBox.AutoUpdater.Properties.Resources.resources
+C:\github\XrmToolBox\XrmToolBox.AutoUpdater\obj\Debug\XrmToolBox.AutoUpdater.csproj.GenerateResource.Cache
+C:\github\XrmToolBox\XrmToolBox.AutoUpdater\obj\Debug\XrmToolBox.AutoUpdater.exe
+C:\github\XrmToolBox\XrmToolBox.AutoUpdater\obj\Debug\XrmToolBox.AutoUpdater.pdb
+C:\Users\Hicham\documents\visual studio 2015\Projects\MyXrmToolBox\XrmToolBox.AutoUpdater\bin\Debug\XrmToolBox.AutoUpdater.exe.config
+C:\Users\Hicham\documents\visual studio 2015\Projects\MyXrmToolBox\XrmToolBox.AutoUpdater\bin\Debug\XrmToolBox.AutoUpdater.exe
+C:\Users\Hicham\documents\visual studio 2015\Projects\MyXrmToolBox\XrmToolBox.AutoUpdater\bin\Debug\XrmToolBox.AutoUpdater.pdb
+C:\Users\Hicham\documents\visual studio 2015\Projects\MyXrmToolBox\XrmToolBox.AutoUpdater\bin\Debug\McTools.Xrm.Connection.dll
+C:\Users\Hicham\documents\visual studio 2015\Projects\MyXrmToolBox\XrmToolBox.AutoUpdater\bin\Debug\McTools.Xrm.Connection.WinForms.dll
+C:\Users\Hicham\documents\visual studio 2015\Projects\MyXrmToolBox\XrmToolBox.AutoUpdater\bin\Debug\Microsoft.Crm.Sdk.Proxy.dll
+C:\Users\Hicham\documents\visual studio 2015\Projects\MyXrmToolBox\XrmToolBox.AutoUpdater\bin\Debug\Microsoft.IdentityModel.Clients.ActiveDirectory.dll
+C:\Users\Hicham\documents\visual studio 2015\Projects\MyXrmToolBox\XrmToolBox.AutoUpdater\bin\Debug\Microsoft.IdentityModel.Clients.ActiveDirectory.WindowsForms.dll
+C:\Users\Hicham\documents\visual studio 2015\Projects\MyXrmToolBox\XrmToolBox.AutoUpdater\bin\Debug\Microsoft.IdentityModel.dll
+C:\Users\Hicham\documents\visual studio 2015\Projects\MyXrmToolBox\XrmToolBox.AutoUpdater\bin\Debug\Microsoft.Xrm.Sdk.Deployment.dll
+C:\Users\Hicham\documents\visual studio 2015\Projects\MyXrmToolBox\XrmToolBox.AutoUpdater\bin\Debug\Microsoft.Xrm.Sdk.dll
+C:\Users\Hicham\documents\visual studio 2015\Projects\MyXrmToolBox\XrmToolBox.AutoUpdater\bin\Debug\Microsoft.Xrm.Sdk.Workflow.dll
+C:\Users\Hicham\documents\visual studio 2015\Projects\MyXrmToolBox\XrmToolBox.AutoUpdater\bin\Debug\Microsoft.Xrm.Tooling.Connector.dll
+C:\Users\Hicham\documents\visual studio 2015\Projects\MyXrmToolBox\XrmToolBox.AutoUpdater\bin\Debug\Microsoft.Crm.Sdk.Proxy.xml
+C:\Users\Hicham\documents\visual studio 2015\Projects\MyXrmToolBox\XrmToolBox.AutoUpdater\bin\Debug\Microsoft.IdentityModel.Clients.ActiveDirectory.pdb
+C:\Users\Hicham\documents\visual studio 2015\Projects\MyXrmToolBox\XrmToolBox.AutoUpdater\bin\Debug\Microsoft.IdentityModel.Clients.ActiveDirectory.xml
+C:\Users\Hicham\documents\visual studio 2015\Projects\MyXrmToolBox\XrmToolBox.AutoUpdater\bin\Debug\Microsoft.IdentityModel.Clients.ActiveDirectory.WindowsForms.pdb
+C:\Users\Hicham\documents\visual studio 2015\Projects\MyXrmToolBox\XrmToolBox.AutoUpdater\bin\Debug\Microsoft.Xrm.Sdk.xml
+C:\Users\Hicham\documents\visual studio 2015\Projects\MyXrmToolBox\XrmToolBox.AutoUpdater\bin\Debug\Microsoft.Xrm.Sdk.Deployment.xml
+C:\Users\Hicham\documents\visual studio 2015\Projects\MyXrmToolBox\XrmToolBox.AutoUpdater\bin\Debug\Microsoft.Xrm.Sdk.Workflow.xml
+C:\Users\Hicham\documents\visual studio 2015\Projects\MyXrmToolBox\XrmToolBox.AutoUpdater\bin\Debug\Microsoft.Xrm.Tooling.Connector.xml
+C:\Users\Hicham\documents\visual studio 2015\Projects\MyXrmToolBox\XrmToolBox.AutoUpdater\obj\Debug\XrmToolBox.AutoUpdater.csprojResolveAssemblyReference.cache
+C:\Users\Hicham\documents\visual studio 2015\Projects\MyXrmToolBox\XrmToolBox.AutoUpdater\obj\Debug\XrmToolBox.AutoUpdater.AutoUpdater.resources
+C:\Users\Hicham\documents\visual studio 2015\Projects\MyXrmToolBox\XrmToolBox.AutoUpdater\obj\Debug\XrmToolBox.AutoUpdater.Properties.Resources.resources
+C:\Users\Hicham\documents\visual studio 2015\Projects\MyXrmToolBox\XrmToolBox.AutoUpdater\obj\Debug\XrmToolBox.AutoUpdater.csproj.GenerateResource.Cache
+C:\Users\Hicham\documents\visual studio 2015\Projects\MyXrmToolBox\XrmToolBox.AutoUpdater\obj\Debug\XrmToolBox.AutoUpdater.exe
+C:\Users\Hicham\documents\visual studio 2015\Projects\MyXrmToolBox\XrmToolBox.AutoUpdater\obj\Debug\XrmToolBox.AutoUpdater.pdb

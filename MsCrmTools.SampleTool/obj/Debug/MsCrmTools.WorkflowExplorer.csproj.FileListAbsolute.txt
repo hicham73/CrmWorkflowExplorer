@@ -1,0 +1,15 @@
+C:\Users\Hicham\documents\visual studio 2015\Projects\MyXrmToolBox\MsCrmTools.SampleTool\bin\Debug\MsCrmTools.WorkflowExplorer.dll.config
+C:\Users\Hicham\documents\visual studio 2015\Projects\MyXrmToolBox\MsCrmTools.SampleTool\bin\Debug\MsCrmTools.WorkflowExplorer.dll
+C:\Users\Hicham\documents\visual studio 2015\Projects\MyXrmToolBox\MsCrmTools.SampleTool\bin\Debug\MsCrmTools.WorkflowExplorer.pdb
+C:\Users\Hicham\documents\visual studio 2015\Projects\MyXrmToolBox\MsCrmTools.SampleTool\bin\Debug\Microsoft.IdentityModel.dll
+C:\Users\Hicham\documents\visual studio 2015\Projects\MyXrmToolBox\MsCrmTools.SampleTool\bin\Debug\XrmToolBox.exe
+C:\Users\Hicham\documents\visual studio 2015\Projects\MyXrmToolBox\MsCrmTools.SampleTool\bin\Debug\XrmToolBox.Extensibility.dll
+C:\Users\Hicham\documents\visual studio 2015\Projects\MyXrmToolBox\MsCrmTools.SampleTool\bin\Debug\NuGet.Core.dll
+C:\Users\Hicham\documents\visual studio 2015\Projects\MyXrmToolBox\MsCrmTools.SampleTool\bin\Debug\Microsoft.Web.XmlTransform.dll
+C:\Users\Hicham\documents\visual studio 2015\Projects\MyXrmToolBox\MsCrmTools.SampleTool\bin\Debug\XrmToolBox.Extensibility.pdb
+C:\Users\Hicham\documents\visual studio 2015\Projects\MyXrmToolBox\MsCrmTools.SampleTool\bin\Debug\XrmToolBox.pdb
+C:\Users\Hicham\documents\visual studio 2015\Projects\MyXrmToolBox\MsCrmTools.SampleTool\obj\Debug\MsCrmTools.WorkflowExplorer.csprojResolveAssemblyReference.cache
+C:\Users\Hicham\documents\visual studio 2015\Projects\MyXrmToolBox\MsCrmTools.SampleTool\obj\Debug\MsCrmTools.WorkflowExplorer.csproj.GenerateResource.Cache
+C:\Users\Hicham\documents\visual studio 2015\Projects\MyXrmToolBox\MsCrmTools.SampleTool\obj\Debug\MsCrmTools.WorkflowExplorer.dll
+C:\Users\Hicham\documents\visual studio 2015\Projects\MyXrmToolBox\MsCrmTools.SampleTool\obj\Debug\MsCrmTools.WorkflowExplorer.pdb
+C:\Users\Hicham\Documents\Visual Studio 2015\Projects\MyXrmToolBox\MsCrmTools.SampleTool\obj\Debug\MsCrmTools.WorkflowExplorer.WorkflowExplorer.resources

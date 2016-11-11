@@ -1,0 +1,78 @@
+C:\github\XrmToolBox\XrmToolBox\bin\Debug\XrmToolBox.exe.config
+C:\github\XrmToolBox\XrmToolBox\bin\Debug\XrmToolBox.exe
+C:\github\XrmToolBox\XrmToolBox\bin\Debug\XrmToolBox.pdb
+C:\github\XrmToolBox\XrmToolBox\bin\Debug\McTools.Xrm.Connection.dll
+C:\github\XrmToolBox\XrmToolBox\bin\Debug\McTools.Xrm.Connection.WinForms.dll
+C:\github\XrmToolBox\XrmToolBox\bin\Debug\Microsoft.Crm.Sdk.Proxy.dll
+C:\github\XrmToolBox\XrmToolBox\bin\Debug\Microsoft.IdentityModel.Clients.ActiveDirectory.dll
+C:\github\XrmToolBox\XrmToolBox\bin\Debug\Microsoft.IdentityModel.Clients.ActiveDirectory.WindowsForms.dll
+C:\github\XrmToolBox\XrmToolBox\bin\Debug\Microsoft.IdentityModel.dll
+C:\github\XrmToolBox\XrmToolBox\bin\Debug\Microsoft.Xrm.Sdk.Deployment.dll
+C:\github\XrmToolBox\XrmToolBox\bin\Debug\Microsoft.Xrm.Sdk.dll
+C:\github\XrmToolBox\XrmToolBox\bin\Debug\Microsoft.Xrm.Sdk.Workflow.dll
+C:\github\XrmToolBox\XrmToolBox\bin\Debug\Microsoft.Xrm.Tooling.Connector.dll
+C:\github\XrmToolBox\XrmToolBox\bin\Debug\Microsoft.Xrm.Tooling.CrmConnectControl.dll
+C:\github\XrmToolBox\XrmToolBox\bin\Debug\XrmToolBox.Extensibility.dll
+C:\github\XrmToolBox\XrmToolBox\bin\Debug\XrmToolBox.Extensibility.pdb
+C:\github\XrmToolBox\XrmToolBox\bin\Debug\Microsoft.Crm.Sdk.Proxy.xml
+C:\github\XrmToolBox\XrmToolBox\bin\Debug\Microsoft.IdentityModel.Clients.ActiveDirectory.xml
+C:\github\XrmToolBox\XrmToolBox\bin\Debug\Microsoft.Xrm.Sdk.xml
+C:\github\XrmToolBox\XrmToolBox\bin\Debug\Microsoft.Xrm.Sdk.Deployment.xml
+C:\github\XrmToolBox\XrmToolBox\bin\Debug\Microsoft.Xrm.Sdk.Workflow.xml
+C:\github\XrmToolBox\XrmToolBox\obj\Debug\XrmToolBox.csprojResolveAssemblyReference.cache
+C:\github\XrmToolBox\XrmToolBox\obj\Debug\XrmToolBox.Forms.AboutForm.resources
+C:\github\XrmToolBox\XrmToolBox\obj\Debug\XrmToolBox.Forms.NewVersionForm.resources
+C:\github\XrmToolBox\XrmToolBox\obj\Debug\XrmToolBox.Forms.SupportScreen.resources
+C:\github\XrmToolBox\XrmToolBox\obj\Debug\XrmToolBox.Forms.OptionsDialog.resources
+C:\github\XrmToolBox\XrmToolBox\obj\Debug\XrmToolBox.Forms.WelcomeDialog.resources
+C:\github\XrmToolBox\XrmToolBox\obj\Debug\XrmToolBox.MainForm.resources
+C:\github\XrmToolBox\XrmToolBox\obj\Debug\XrmToolBox.Properties.Resources.resources
+C:\github\XrmToolBox\XrmToolBox\obj\Debug\XrmToolBox.Forms.TabConnectionUpdater.resources
+C:\github\XrmToolBox\XrmToolBox\obj\Debug\XrmToolBox.csproj.GenerateResource.Cache
+C:\github\XrmToolBox\XrmToolBox\obj\Debug\XrmToolBox.exe
+C:\github\XrmToolBox\XrmToolBox\obj\Debug\XrmToolBox.pdb
+C:\github\XrmToolBox\XrmToolBox\bin\Debug\Microsoft.Web.XmlTransform.dll
+C:\github\XrmToolBox\XrmToolBox\bin\Debug\NuGet.Core.dll
+C:\github\XrmToolBox\XrmToolBox\bin\Debug\Microsoft.IdentityModel.Clients.ActiveDirectory.pdb
+C:\github\XrmToolBox\XrmToolBox\bin\Debug\Microsoft.IdentityModel.Clients.ActiveDirectory.WindowsForms.pdb
+C:\github\XrmToolBox\XrmToolBox\bin\Debug\Microsoft.Xrm.Tooling.Connector.xml
+C:\github\XrmToolBox\XrmToolBox\obj\Debug\XrmToolBox.Forms.PluginsChecker.resources
+C:\Users\Hicham\Documents\Visual Studio 2015\Projects\MyXrmToolBox\XrmToolBox\bin\Debug\XrmToolBox.exe.config
+C:\Users\Hicham\documents\visual studio 2015\Projects\MyXrmToolBox\XrmToolBox\bin\Debug\XrmToolBox.exe
+C:\Users\Hicham\documents\visual studio 2015\Projects\MyXrmToolBox\XrmToolBox\bin\Debug\XrmToolBox.pdb
+C:\Users\Hicham\documents\visual studio 2015\Projects\MyXrmToolBox\XrmToolBox\bin\Debug\McTools.Xrm.Connection.dll
+C:\Users\Hicham\documents\visual studio 2015\Projects\MyXrmToolBox\XrmToolBox\bin\Debug\McTools.Xrm.Connection.WinForms.dll
+C:\Users\Hicham\documents\visual studio 2015\Projects\MyXrmToolBox\XrmToolBox\bin\Debug\Microsoft.Crm.Sdk.Proxy.dll
+C:\Users\Hicham\documents\visual studio 2015\Projects\MyXrmToolBox\XrmToolBox\bin\Debug\Microsoft.IdentityModel.Clients.ActiveDirectory.dll
+C:\Users\Hicham\documents\visual studio 2015\Projects\MyXrmToolBox\XrmToolBox\bin\Debug\Microsoft.IdentityModel.Clients.ActiveDirectory.WindowsForms.dll
+C:\Users\Hicham\documents\visual studio 2015\Projects\MyXrmToolBox\XrmToolBox\bin\Debug\Microsoft.IdentityModel.dll
+C:\Users\Hicham\documents\visual studio 2015\Projects\MyXrmToolBox\XrmToolBox\bin\Debug\Microsoft.Web.XmlTransform.dll
+C:\Users\Hicham\documents\visual studio 2015\Projects\MyXrmToolBox\XrmToolBox\bin\Debug\Microsoft.Xrm.Sdk.Deployment.dll
+C:\Users\Hicham\documents\visual studio 2015\Projects\MyXrmToolBox\XrmToolBox\bin\Debug\Microsoft.Xrm.Sdk.dll
+C:\Users\Hicham\documents\visual studio 2015\Projects\MyXrmToolBox\XrmToolBox\bin\Debug\Microsoft.Xrm.Sdk.Workflow.dll
+C:\Users\Hicham\documents\visual studio 2015\Projects\MyXrmToolBox\XrmToolBox\bin\Debug\Microsoft.Xrm.Tooling.Connector.dll
+C:\Users\Hicham\documents\visual studio 2015\Projects\MyXrmToolBox\XrmToolBox\bin\Debug\Microsoft.Xrm.Tooling.CrmConnectControl.dll
+C:\Users\Hicham\documents\visual studio 2015\Projects\MyXrmToolBox\XrmToolBox\bin\Debug\NuGet.Core.dll
+C:\Users\Hicham\documents\visual studio 2015\Projects\MyXrmToolBox\XrmToolBox\bin\Debug\XrmToolBox.Extensibility.dll
+C:\Users\Hicham\documents\visual studio 2015\Projects\MyXrmToolBox\XrmToolBox\bin\Debug\XrmToolBox.Extensibility.pdb
+C:\Users\Hicham\documents\visual studio 2015\Projects\MyXrmToolBox\XrmToolBox\bin\Debug\Microsoft.Crm.Sdk.Proxy.xml
+C:\Users\Hicham\documents\visual studio 2015\Projects\MyXrmToolBox\XrmToolBox\bin\Debug\Microsoft.IdentityModel.Clients.ActiveDirectory.pdb
+C:\Users\Hicham\documents\visual studio 2015\Projects\MyXrmToolBox\XrmToolBox\bin\Debug\Microsoft.IdentityModel.Clients.ActiveDirectory.xml
+C:\Users\Hicham\documents\visual studio 2015\Projects\MyXrmToolBox\XrmToolBox\bin\Debug\Microsoft.IdentityModel.Clients.ActiveDirectory.WindowsForms.pdb
+C:\Users\Hicham\documents\visual studio 2015\Projects\MyXrmToolBox\XrmToolBox\bin\Debug\Microsoft.Xrm.Sdk.xml
+C:\Users\Hicham\documents\visual studio 2015\Projects\MyXrmToolBox\XrmToolBox\bin\Debug\Microsoft.Xrm.Sdk.Deployment.xml
+C:\Users\Hicham\documents\visual studio 2015\Projects\MyXrmToolBox\XrmToolBox\bin\Debug\Microsoft.Xrm.Sdk.Workflow.xml
+C:\Users\Hicham\documents\visual studio 2015\Projects\MyXrmToolBox\XrmToolBox\bin\Debug\Microsoft.Xrm.Tooling.Connector.xml
+C:\Users\Hicham\documents\visual studio 2015\Projects\MyXrmToolBox\XrmToolBox\obj\Debug\XrmToolBox.csprojResolveAssemblyReference.cache
+C:\Users\Hicham\documents\visual studio 2015\Projects\MyXrmToolBox\XrmToolBox\obj\Debug\XrmToolBox.Forms.AboutForm.resources
+C:\Users\Hicham\documents\visual studio 2015\Projects\MyXrmToolBox\XrmToolBox\obj\Debug\XrmToolBox.Forms.NewVersionForm.resources
+C:\Users\Hicham\documents\visual studio 2015\Projects\MyXrmToolBox\XrmToolBox\obj\Debug\XrmToolBox.Forms.PluginsChecker.resources
+C:\Users\Hicham\documents\visual studio 2015\Projects\MyXrmToolBox\XrmToolBox\obj\Debug\XrmToolBox.Forms.SupportScreen.resources
+C:\Users\Hicham\documents\visual studio 2015\Projects\MyXrmToolBox\XrmToolBox\obj\Debug\XrmToolBox.Forms.OptionsDialog.resources
+C:\Users\Hicham\documents\visual studio 2015\Projects\MyXrmToolBox\XrmToolBox\obj\Debug\XrmToolBox.Forms.WelcomeDialog.resources
+C:\Users\Hicham\documents\visual studio 2015\Projects\MyXrmToolBox\XrmToolBox\obj\Debug\XrmToolBox.MainForm.resources
+C:\Users\Hicham\documents\visual studio 2015\Projects\MyXrmToolBox\XrmToolBox\obj\Debug\XrmToolBox.Properties.Resources.resources
+C:\Users\Hicham\documents\visual studio 2015\Projects\MyXrmToolBox\XrmToolBox\obj\Debug\XrmToolBox.Forms.TabConnectionUpdater.resources
+C:\Users\Hicham\documents\visual studio 2015\Projects\MyXrmToolBox\XrmToolBox\obj\Debug\XrmToolBox.csproj.GenerateResource.Cache
+C:\Users\Hicham\documents\visual studio 2015\Projects\MyXrmToolBox\XrmToolBox\obj\Debug\XrmToolBox.exe
+C:\Users\Hicham\documents\visual studio 2015\Projects\MyXrmToolBox\XrmToolBox\obj\Debug\XrmToolBox.pdb
