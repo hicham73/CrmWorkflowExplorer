@@ -52,3 +52,12 @@ C:\Users\Hicham\documents\visual studio 2015\Projects\MyXrmToolBox\XrmToolBox.Au
 C:\Users\Hicham\documents\visual studio 2015\Projects\MyXrmToolBox\XrmToolBox.AutoUpdater\obj\Debug\XrmToolBox.AutoUpdater.csproj.GenerateResource.Cache
 C:\Users\Hicham\documents\visual studio 2015\Projects\MyXrmToolBox\XrmToolBox.AutoUpdater\obj\Debug\XrmToolBox.AutoUpdater.exe
 C:\Users\Hicham\documents\visual studio 2015\Projects\MyXrmToolBox\XrmToolBox.AutoUpdater\obj\Debug\XrmToolBox.AutoUpdater.pdb
+C:\Users\Hicham\Source\Repos\CrmWorkflowExplorer\XrmToolBox.AutoUpdater\bin\Debug\XrmToolBox.AutoUpdater.exe.config
+C:\Users\Hicham\Source\Repos\CrmWorkflowExplorer\XrmToolBox.AutoUpdater\bin\Debug\XrmToolBox.AutoUpdater.exe
+C:\Users\Hicham\Source\Repos\CrmWorkflowExplorer\XrmToolBox.AutoUpdater\bin\Debug\XrmToolBox.AutoUpdater.pdb
+C:\Users\Hicham\Source\Repos\CrmWorkflowExplorer\XrmToolBox.AutoUpdater\bin\Debug\Microsoft.IdentityModel.dll
+C:\Users\Hicham\Source\Repos\CrmWorkflowExplorer\XrmToolBox.AutoUpdater\obj\Debug\XrmToolBox.AutoUpdater.AutoUpdater.resources
+C:\Users\Hicham\Source\Repos\CrmWorkflowExplorer\XrmToolBox.AutoUpdater\obj\Debug\XrmToolBox.AutoUpdater.Properties.Resources.resources
+C:\Users\Hicham\Source\Repos\CrmWorkflowExplorer\XrmToolBox.AutoUpdater\obj\Debug\XrmToolBox.AutoUpdater.csproj.GenerateResource.Cache
+C:\Users\Hicham\Source\Repos\CrmWorkflowExplorer\XrmToolBox.AutoUpdater\obj\Debug\XrmToolBox.AutoUpdater.exe
+C:\Users\Hicham\Source\Repos\CrmWorkflowExplorer\XrmToolBox.AutoUpdater\obj\Debug\XrmToolBox.AutoUpdater.pdb

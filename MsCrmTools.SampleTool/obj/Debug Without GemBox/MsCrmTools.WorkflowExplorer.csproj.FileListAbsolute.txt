@@ -1,0 +1,3 @@
+C:\Users\Hicham\Source\Repos\CrmWorkflowExplorer\MsCrmTools.SampleTool\obj\Debug Without GemBox\MsCrmTools.WorkflowExplorer.csprojResolveAssemblyReference.cache
+C:\Users\Hicham\Source\Repos\CrmWorkflowExplorer\MsCrmTools.SampleTool\obj\Debug Without GemBox\MsCrmTools.WorkflowExplorer.WorkflowExplorer.resources
+C:\Users\Hicham\Source\Repos\CrmWorkflowExplorer\MsCrmTools.SampleTool\obj\Debug Without GemBox\MsCrmTools.WorkflowExplorer.csproj.GenerateResource.Cache
