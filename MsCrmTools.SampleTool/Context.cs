@@ -11,11 +11,11 @@ namespace MsCrmTools.WorkflowExplorer
     {
 
         public static List<Component> PluginAssemblies;
-        public static List<Component> Workflows;
+        public static List<Component> WorkflowComponents;
         public static IOrganizationService Service;
+
 
         public static bool HideAssemblies { get; internal set; } = true;
 
-        private string foo;
     }
 }

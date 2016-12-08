@@ -81,7 +81,7 @@ namespace MsCrmTools.WorkflowExplorer
 
         private void BuildTree(ComponentTreeNode oNode, int y)
         {
-            if (!ShowAssemblies && oNode.Type == ComponentType.PluginAssembly)
+            if (!ShowAssemblies && oNode.ComponentType == Component.ComponentTypes.PluginType)
                 oNode.IsHidden = true;
                 foreach (ComponentTreeNode childNode in oNode.Nodes)
             {
@@ -139,7 +139,7 @@ namespace MsCrmTools.WorkflowExplorer
 
         private void DrawChart(ComponentTreeNode oNode)
         {
-            Console.WriteLine("Drawing component of type {0}", oNode.Type);
+            Console.WriteLine("Drawing component of type {0}", oNode.WorkflowCategory);
             // Create font and brush.
             Font drawFont = new Font("verdana", _FontSize);
             SolidBrush drawBrush = new SolidBrush(_FontColor);
@@ -162,7 +162,7 @@ namespace MsCrmTools.WorkflowExplorer
             gr.DrawRectangle(boxPen, titleRectangle);
             gr.DrawRectangle(boxPen, detailRectangle);
 
-            Console.WriteLine("Drawing Rectangle for Component Type {0}, Name {1}", oNode.Type, oNode.Text);
+            Console.WriteLine("Drawing Rectangle for Component Type {0}, Name {1}", oNode.WorkflowCategory, oNode.Text);
 
             Color detailFillColor = GetBoxColor(oNode);
             Color titleFillColor = Color.Silver;
@@ -299,23 +299,38 @@ namespace MsCrmTools.WorkflowExplorer
 
         Color GetBoxColor(ComponentTreeNode node)
         {
-            
-            switch (node.Type)
+            Color color = Color.White;
+
+            if (node.ComponentType == Component.ComponentTypes.Entity)
             {
-                case ComponentType.PluginAssembly:
-                    return _PluginBoxFillColor;
-                    break;
-                case ComponentType.Action:
-                    return _ActionBoxFillColor;
-                    break;
-                case ComponentType.Workflow:
-                    return _WorkflowBoxFillColor;
-                    break;
-                default:
-                    return Color.White;
+                color = _VisitedBoxFillColor;
+            }
+            else if (node.ComponentType == Component.ComponentTypes.Workflow)
+            {
+
+                switch (node.WorkflowCategory)
+                {
+                    case Component.WorkflowCategories.Action:
+                        color = _ActionBoxFillColor;
+                        break;
+                    case Component.WorkflowCategories.Workflow:
+                        color = _WorkflowBoxFillColor;
+                        break;
+                    case Component.WorkflowCategories.Dialog:
+                        color = Color.Pink;
+                        break;
+                    case Component.WorkflowCategories.BusinessRule:
+                        color = Color.PeachPuff;
+                        break;
+                }
 
             }
+            else if (node.ComponentType == Component.ComponentTypes.PluginType)
+            {
+                color = _PluginBoxFillColor;
+            }
 
+            return color;
         }
     }
 }

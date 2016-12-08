@@ -38,7 +38,6 @@ namespace MsCrmTools.WorkflowExplorer
 
         public event EventHandler<StatusBarMessageEventArgs> SendMessageToStatusBar;
 
-
         public void ProcessRetrieveWorkflows()
         {
             Context.Service = Service;
@@ -50,66 +49,63 @@ namespace MsCrmTools.WorkflowExplorer
                 Message = "Retrieving Workflows...",
                 Work = (bw, ea) =>
                 {
-                        if (bw.CancellationPending)
+                    if (bw.CancellationPending)
+                    {
+                        ea.Cancel = true;
+                    }
+
+                    Context.PluginAssemblies = new List<Component>();
+                    Context.WorkflowComponents = new List<Component>();
+
+                    EntityCollection wCollection = ComponentDA.GetWorkflows();
+
+                    foreach (Entity w in wCollection.Entities)
+                    {
+
+                        Component workflow = new Component();
+
+                        int category = w.GetAttributeValue<OptionSetValue>("category").Value;
+                        workflow.WorkflowCategory = (Component.WorkflowCategories)category;
+                        workflow.ComponentType = Component.ComponentTypes.Workflow;
+                        workflow.Id = w.Id;
+                        workflow.Name = w.GetAttributeValue<string>("name");
+                        workflow.PrimaryEntityName = w.GetAttributeValue<string>("primaryentity");
+
+                        Context.WorkflowComponents.Add(workflow);
+
+                    }
+
+                    foreach (var wc in Context.WorkflowComponents)
+                    {
+                        DataCollection<Entity> requiredComponents = ComponentDA.RetrieveRequiredComponents(wc.Id, wc.Name);
+
+                        foreach (var rc in requiredComponents)
                         {
-                            ea.Cancel = true;
-                        }
+                            int componentType = rc.GetAttributeValue<OptionSetValue>("requiredcomponenttype").Value;
 
-                        Context.PluginAssemblies = new List<Component>();
-                        Context.Workflows = new List<Component>();
+                            Guid requiredComponentId = rc.GetAttributeValue<Guid>("requiredcomponentobjectid");
 
-                        EntityCollection wCollection = ComponentDA.GetWorkflows();
- 
-                        List<Entity> allWorkflows = new List<Entity>();
-
-                        foreach (Entity w in wCollection.Entities)
-                        {
- 
-                            Component workflow = new Component();
-                            int category = w.GetAttributeValue<OptionSetValue>("category").Value;
-                            if(category == 0)
-                                workflow.Type = ComponentType.Workflow;
-                            else
-                                workflow.Type = ComponentType.Action;
-
-                            workflow.Id = w.Id;
-                            workflow.Name = w.GetAttributeValue<string>("name");
-                            workflow.PrimaryEntityName = w.GetAttributeValue<string>("primaryentity");
-
-                            Context.Workflows.Add(workflow);
-
-                        }
-
-                        foreach (var workflow in Context.Workflows)
-                        {
-                            DataCollection<Entity> requiredComponents = RetrieveRequiredComponents(workflow.Id, workflow.Name);
-
-                            foreach (var rc in requiredComponents)
+                            if (componentType == (int)Component.ComponentTypes.Workflow || componentType == (int)Component.ComponentTypes.PluginType)
                             {
-                                int componentType = rc.GetAttributeValue<OptionSetValue>("requiredcomponenttype").Value;
-                                Guid requiredComponentId = rc.GetAttributeValue<Guid>("requiredcomponentobjectid");
 
-                                if (componentType == 29 || componentType == 90)
+                                Component w = ComponentDA.GetComponentByType(componentType, requiredComponentId);
+
+                                if (w != null)
                                 {
-                            
-                                    Component w = ComponentDA.GetComponentById(requiredComponentId, componentType);
-
-                                    if (w != null)
-                                    {
-                                        workflow.ChildComponents.Add(w);
-                                    }
-                                    else
-                                    {
-                                        Console.WriteLine("Component with ID {0} not found", requiredComponentId);
-                                    }
+                                    wc.ChildComponents.Add(w);
+                                }
+                                else
+                                {
+                                    Console.WriteLine("Component with ID {0} not found", requiredComponentId);
                                 }
                             }
-
-
                         }
 
-                        ea.Result = Context.Workflows;
- 
+
+                    }
+
+                    ea.Result = Context.WorkflowComponents;
+
                 },
                 PostWorkCallBack = ea =>
                 {
@@ -127,11 +123,6 @@ namespace MsCrmTools.WorkflowExplorer
                 MessageHeight = 150
             });
 
-        }
-
-        private void tsbClose_Click(object sender, EventArgs e)
-        {
-            CloseTool();
         }
 
         private void DisplayByEntity(List<Component> components)
@@ -159,7 +150,7 @@ namespace MsCrmTools.WorkflowExplorer
             {
                 var childWorkflows = map[en];
                 ComponentTreeNode rootComponent = new ComponentTreeNode();
-                rootComponent.Type = ComponentType.Entity;
+                rootComponent.ComponentType = Component.ComponentTypes.Entity;
                 rootComponent.Text = en;
                 tvWorkflows.Nodes.Add(rootComponent);
                 foreach (var workflow in childWorkflows)
@@ -172,23 +163,18 @@ namespace MsCrmTools.WorkflowExplorer
 
         }
 
-
-        private void tsbWhoAmI_Click(object sender, EventArgs e)
-        {
-            ExecuteMethod(ProcessRetrieveWorkflows);
-        }
-
-
         void AppendWorkflowNode(ComponentTreeNode node, Component w, int depth)
         {
             depth--;
             if (depth < 0)
-                return;               
+                return;
             ComponentTreeNode childNode = new ComponentTreeNode();
             childNode.Text = w.Name;
             childNode.Id = w.Id;
-            childNode.Type = w.Type;
+            childNode.WorkflowCategory = w.WorkflowCategory;
+            childNode.ComponentType = w.ComponentType;
             childNode.PrimaryEntityName = w.PrimaryEntityName;
+
             node.Nodes.Add(childNode);
             childNode.IsVisited = IsComponentVisited(childNode, childNode.Id);
 
@@ -217,39 +203,37 @@ namespace MsCrmTools.WorkflowExplorer
             return false;
 
         }
-        DataCollection<Entity> RetrieveDependentComponents(Guid workflowId, string workflowName)
-        {
-            RetrieveDependentComponentsRequest request = new RetrieveDependentComponentsRequest
-            {
-                ObjectId = workflowId,
-                ComponentType = 29
-            };
-
-            RetrieveDependentComponentsResponse response = (RetrieveDependentComponentsResponse)Context.Service.Execute(request);
-            EntityCollection result = (EntityCollection)response.Results["EntityCollection"];
-
-            return result.Entities;
-
-        }
 
 
-        DataCollection<Entity> RetrieveRequiredComponents(Guid workflowId, string workflowName)
+        public void DisplayGraph()
         {
 
+            ComponentTreeNode selectedNode = (ComponentTreeNode)tvWorkflows.SelectedNode;
+            selectedNode.IsRoot = true;
+            TreeBuilder myTree = new TreeBuilder();
 
-            RetrieveRequiredComponentsRequest request = new RetrieveRequiredComponentsRequest
-            {
-                ObjectId = workflowId,
-                ComponentType = 29
-            };
+            int w = -1;
+            int h = -1;
 
-            RetrieveRequiredComponentsResponse response = (RetrieveRequiredComponentsResponse)Context.Service.Execute(request);
-            EntityCollection result = (EntityCollection)response.Results["EntityCollection"];
+            Image img = Image.FromStream(myTree.GenerateTree(selectedNode, ref w, ref h, "1", System.Drawing.Imaging.ImageFormat.Bmp));
+            pbImage.Image = (Image)(new Bitmap(img, new Size(w, h)));
 
-            return result.Entities;
-
+            selectedNode.IsRoot = false;
         }
 
+        #endregion Base tool implementation
+
+        #region UI Mehtods
+        private void tsbWhoAmI_Click(object sender, EventArgs e)
+        {
+            this.btnLoadWorkflows.Enabled = false;
+            ExecuteMethod(ProcessRetrieveWorkflows);
+        }
+
+        private void tsbClose_Click(object sender, EventArgs e)
+        {
+            CloseTool();
+        }
 
         private void tsbCancel_Click(object sender, EventArgs e)
         {
@@ -258,8 +242,35 @@ namespace MsCrmTools.WorkflowExplorer
             MessageBox.Show("Cancelled");
         }
 
-        #endregion Base tool implementation
+        private void tvWorkflows_AfterSelect(object sender, TreeViewEventArgs e)
+        {
+            DisplayGraph();
+        }
 
+        private void btnToggleAssemblies_Click(object sender, EventArgs e)
+        {
+            Context.HideAssemblies = !Context.HideAssemblies;
+
+            if (Context.HideAssemblies)
+                btnToggleAssemblies.Text = "Hide Assemblies";
+            else
+                btnToggleAssemblies.Text = "Show Assemblies";
+
+            DisplayGraph();
+
+        }
+
+        private void pbImage_Click(object sender, EventArgs e)
+        {
+            MouseEventArgs me = (MouseEventArgs)e;
+            Point coordinates = me.Location;
+            MessageBox.Show(string.Format("coordinates: ({0},{1})", coordinates.X, coordinates.Y));
+        }
+
+
+
+        #endregion
+        
         #region Github implementation
 
         public string RepositoryName
@@ -306,58 +317,5 @@ namespace MsCrmTools.WorkflowExplorer
 
         #endregion Help implementation
 
-        private void tvWorkflows_AfterSelect(object sender, TreeViewEventArgs e)
-        {
-            DisplayGraph();
-        }
-        public void DisplayGraph()
-        {
-
-            ComponentTreeNode selectedNode = (ComponentTreeNode)tvWorkflows.SelectedNode;
-            selectedNode.IsRoot = true;
-            TreeBuilder myTree = new TreeBuilder();
-
-            int w = -1;
-            int h = -1;
-
-            Image img = Image.FromStream(myTree.GenerateTree(selectedNode, ref w, ref h, "1", System.Drawing.Imaging.ImageFormat.Bmp));
-            pbImage.Image = (Image)(new Bitmap(img, new Size(w, h)));
-
-            selectedNode.IsRoot = false;
-        }
-
-
-        private void NavigateToWorkflow()
-        {
-            ComponentTreeNode selectedNode = (ComponentTreeNode)tvWorkflows.SelectedNode;
-            selectedNode.IsRoot = true;
-            string id = selectedNode.Id.ToString(); // "6858AA7B-5835-4D7E-B619-62C595281233";
-            webBrowser1.Url = new Uri(String.Format("https://crm2016fe2dev.dev.teksavvy.ca/TSR1SP62016/sfa/workflow/edit.aspx?id=%7b{0}%7d", id));
-
-        }
-
-        private void toolStripButton1_Click(object sender, EventArgs e)
-        {
-            /*
-            ComponentTreeNode rootNode = (ComponentTreeNode)tvWorkflows.SelectedNode;
-            rootNode.IsRoot = true;
-            TreeBuilder myTree = new TreeBuilder();
-            pbImage.Image = Image.FromStream(myTree.GenerateTree(rootNode, - 1, -1, "1", System.Drawing.Imaging.ImageFormat.Bmp));
-            rootNode.IsRoot = false;
-            */
-        }
-
-        private void btnToggleAssemblies_Click(object sender, EventArgs e)
-        {
-            Context.HideAssemblies = !Context.HideAssemblies;
-
-            if (Context.HideAssemblies)
-                btnToggleAssemblies.Text = "Show Assemblies";
-            else
-                btnToggleAssemblies.Text = "Hide Assemblies";
-
-            DisplayGraph();
-
-        }
     }
 }

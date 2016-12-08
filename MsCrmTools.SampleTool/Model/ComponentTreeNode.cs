@@ -16,35 +16,67 @@ namespace MsCrmTools.WorkflowExplorer
         public string ComponentName { get; set;}
         public string PrimaryEntityName { get; set; }
 
-        private ComponentType type;
-        public ComponentType Type {
+        private Component.WorkflowCategories _workflowCategory;
+        public Component.WorkflowCategories WorkflowCategory
+        {
             get
             {
-                return type;
+                return _workflowCategory;
             }
-
             set
             {
-                this.type = value;
-                this.ImageIndex = 0;
-                switch (value)
+                this._workflowCategory = value;
+                SetImageIndex();
+            }
+        }
+        private Component.ComponentTypes _componentType;
+        public Component.ComponentTypes ComponentType
+        {
+            get
+            {
+                return _componentType;
+            }
+            set
+            {
+                this._componentType = value;
+                SetImageIndex();
+            }
+        }
+
+
+        public void SetImageIndex()
+        {
+            if (ComponentType == Component.ComponentTypes.Workflow)
+            {
+                switch (WorkflowCategory)
                 {
-                    case ComponentType.Entity:
-                        this.ImageIndex = 0;
-                        break;
-                    case ComponentType.Workflow:
+                    case Component.WorkflowCategories.Workflow:
                         this.ImageIndex = 1;
                         break;
-                    case ComponentType.Action:
+                    case Component.WorkflowCategories.Action:
                         this.ImageIndex = 2;
                         break;
-                    case ComponentType.PluginAssembly:
-                        this.ImageIndex = 3;
+                    case Component.WorkflowCategories.Dialog:
+                        this.ImageIndex = 4;
+                        break;
+                    case Component.WorkflowCategories.BusinessRule:
+                        this.ImageIndex = 5;
                         break;
 
                 }
             }
+            else if (ComponentType == Component.ComponentTypes.Entity)
+            {
+                this.ImageIndex = 0;
+
+            }
+            else if (ComponentType == Component.ComponentTypes.PluginType)
+            {
+                this.ImageIndex = 3;
+
+            }
         }
+
         public int X { get; set; }
         public int Y { get; set; }
         public bool IsRoot { get; set; } = false;
@@ -54,14 +86,14 @@ namespace MsCrmTools.WorkflowExplorer
         {
             get
             {
-                return this.Type == ComponentType.Workflow;
+                return this.ComponentType == Component.ComponentTypes.Workflow;
             }
         }
         public bool IsAssembly
         {
             get
             {
-                return this.Type == ComponentType.PluginAssembly;
+                return this.ComponentType == Component.ComponentTypes.PluginType;
             }
         }
 
@@ -69,7 +101,7 @@ namespace MsCrmTools.WorkflowExplorer
         {
             get
             {
-                return this.Type == ComponentType.Entity;
+                return this.ComponentType == Component.ComponentTypes.Entity;
             }
         }
         #endregion
@@ -88,7 +120,8 @@ namespace MsCrmTools.WorkflowExplorer
                 Name = this.Name,
                 Id = this.Id,
                 IsHidden = this.IsHidden,
-                Type = this.Type,
+                WorkflowCategory = this.WorkflowCategory,
+                ComponentType = this.ComponentType,
                 Text = this.Text,
                 PrimaryEntityName = this.PrimaryEntityName,
                 IsVisited = this.IsVisited
@@ -97,7 +130,7 @@ namespace MsCrmTools.WorkflowExplorer
 
             foreach (ComponentTreeNode childNode in this.Nodes)
             {
-                if (Context.HideAssemblies || childNode.Type != ComponentType.PluginAssembly)
+                if (Context.HideAssemblies || childNode.ComponentType != Component.ComponentTypes.PluginType)
                 {
                     ComponentTreeNode newChildNode = childNode.DeepClone();
                     newNode.Nodes.Add(newChildNode);

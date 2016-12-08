@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
+    <metadata>
+        <id>MsCrmTools.WorkflowExplorer</id>
+        <version>1.2016.0.1</version>
+        <title>CRM Workflow Explorer</title>
+        <authors>Hicham Wahbi</authors>
+        <owners>Hicham Wahbi</owners>
+        <projectUrl>https://github.com/hicham73/CrmWorkflowExplorer</projectUrl>
+        <requireLicenseAcceptance>false</requireLicenseAcceptance>
+        <description>Display Workflows in a Tree structure and Graphs</description>
+        <releaseNotes>This is still in Beta version</releaseNotes>
+        <copyright>Copyright 2016  MsCrmTools</copyright>
+        <language />
+        <tags>XrmToolBox Plugin Workflow Explorer</tags>
+        <serviceable>true</serviceable>
+        <dependencies>
+            <dependency id="XrmToolBoxPackage" version="1.2016.10.2" />
+        </dependencies>
+    </metadata>
+    <files>
+        <file src="MsCrmTools.SampleTool\bin\Release\MsCrmTools.WorkflowExplorer.dll" target="lib\net452\Plugins\MsCrmTools.WorkflowExplorer.dll" />
+    </files>
+</package>

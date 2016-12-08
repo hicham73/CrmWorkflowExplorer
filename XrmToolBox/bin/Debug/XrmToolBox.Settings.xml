@@ -12,7 +12,7 @@
   <DisplayMostUsedFirst>false</DisplayMostUsedFirst>
   <DisplayPluginsStoreOnStartup>true</DisplayPluginsStoreOnStartup>
   <HiddenPlugins />
-  <LastAdvertisementDisplay>2016-10-29T17:38:45.2340527-04:00</LastAdvertisementDisplay>
+  <LastAdvertisementDisplay>2016-11-26T07:42:49.8687574-05:00</LastAdvertisementDisplay>
   <LastUpdateCheck>2016-10-23T07:18:15.6784116-04:00</LastUpdateCheck>
   <MostUsedList>
     <PluginUseCount>
@@ -32,7 +32,7 @@
       <Name>MsCrmTools.WorflowManager.Plugin</Name>
     </PluginUseCount>
     <PluginUseCount>
-      <Count>42</Count>
+      <Count>51</Count>
       <Name>MsCrmTools.WorkflowExplorer.Plugin</Name>
     </PluginUseCount>
   </MostUsedList>
